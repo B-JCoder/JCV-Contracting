@@ -58,20 +58,20 @@ export default function HomePage() {
               </p>
 
               {/* Three Buttons */}
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
-                <Button className="glass-card border-teal-400/30 text-teal-400 hover:bg-teal-400/10 h-auto py-4 px-6 flex flex-col items-center">
-                  <Award className="h-8 w-8 mb-2" />
-                  <span className="font-sans font-semibold text-center">15+ Years Experience</span>
-                </Button>
-                <Button className="glass-card border-teal-400/10 text-teal-400 hover:bg-teal-400/10 h-auto py-4 px-6 flex flex-col items-center">
-                  <Shield className="h-8 w-8 mb-2" />
-                  <span className="font-sans font-semibold text-center">Licensed & Insured</span>
-                </Button>
-                <Button className="glass-card border-teal-400/30 text-teal-400 hover:bg-teal-400/10 h-auto py-4 px-6 flex flex-col items-center">
-                  <Users className="h-8 w-8 mb-2" />
-                  <span className="font-sans font-semibold text-center">500+ Projects Completed</span>
-                </Button>
-              </div>
+                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
+  <Button className="glass-card border-teal-400/30 text-teal-400 hover:border-teal-400 h-auto py-4 px-6 flex flex-col items-center transition-all duration-200">
+    <Award className="h-8 w-8 mb-2" />
+    <span className="font-sans font-semibold text-center">15+ Years Experience</span>
+  </Button>
+  <Button className="glass-card border-teal-400/10 text-teal-400 hover:border-teal-400 h-auto py-4 px-6 flex flex-col items-center transition-all duration-200">
+    <Shield className="h-8 w-8 mb-2" />
+    <span className="font-sans font-semibold text-center">Licensed & Insured</span>
+  </Button>
+  <Button className="glass-card border-teal-400/30 text-teal-400 hover:border-teal-400 h-auto py-4 px-6 flex flex-col items-center transition-all duration-200">
+    <Users className="h-8 w-8 mb-2" />
+    <span className="font-sans font-semibold text-center">500+ Projects Completed</span>
+  </Button>
+</div>
 
               <Link href="#services">
                 <Button className="glass-button text-white font-sans font-semibold">View Our Services</Button>
