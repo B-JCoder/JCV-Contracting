@@ -2,7 +2,7 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Montserrat, Merriweather } from "next/font/google"
 import "./globals.css"
-import Navigation from "@/components/navigation"
+
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -33,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${montserrat.variable} ${merriweather.variable}`}>
       <body className={merriweather.className}>
-        <Navigation />
+        
         {children}
       </body>
     </html>

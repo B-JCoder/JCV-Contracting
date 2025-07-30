@@ -28,10 +28,13 @@ import {
 import Image from "next/image"
 import Link from "next/link"
 import VideoHero from "@/components/video-hero"
+import Navigation from "@/components/navigation"
+
 
 export default function HomePage() {
   return (
     <div className="min-h-screen">
+      <Navigation />
       {/* Hero Section with Video Background */}
       <section id="home">
         <VideoHero />
@@ -60,7 +63,7 @@ export default function HomePage() {
                   <Award className="h-8 w-8 mb-2" />
                   <span className="font-sans font-semibold text-center">15+ Years Experience</span>
                 </Button>
-                <Button className="glass-card border-teal-400/30 text-teal-400 hover:bg-teal-400/10 h-auto py-4 px-6 flex flex-col items-center">
+                <Button className="glass-card border-teal-400/10 text-teal-400 hover:bg-teal-400/10 h-auto py-4 px-6 flex flex-col items-center">
                   <Shield className="h-8 w-8 mb-2" />
                   <span className="font-sans font-semibold text-center">Licensed & Insured</span>
                 </Button>

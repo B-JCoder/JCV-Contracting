@@ -18,6 +18,9 @@ import {
 } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
+// import Navigation from "@/components/navigation"
+// import servicesNavigation from "@/services/nav"
+import ServicesNavigation from "./nav"
 
 export default function ServicesPage() {
   const services = [
@@ -118,6 +121,9 @@ export default function ServicesPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
+      {/* <Navigation />
+       */}
+       <ServicesNavigation />
       <section className="py-20 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
