@@ -1,0 +1,149 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 13% 18%;
+    --foreground: 220 9% 95%;
+    --card: 220 13% 18%;
+    --card-foreground: 220 9% 95%;
+    --popover: 220 13% 18%;
+    --popover-foreground: 220 9% 95%;
+    --primary: 174 72% 56%;
+    --primary-foreground: 220 13% 18%;
+    --secondary: 220 13% 25%;
+    --secondary-foreground: 220 9% 95%;
+    --muted: 220 13% 25%;
+    --muted-foreground: 220 9% 70%;
+    --accent: 174 72% 56%;
+    --accent-foreground: 220 13% 18%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 220 9% 95%;
+    --border: 220 13% 25%;
+    --input: 220 13% 25%;
+    --ring: 174 72% 56%;
+    --radius: 0.75rem;
+    --chart-1: 174 72% 56%;
+    --chart-2: 174 72% 46%;
+    --chart-3: 174 72% 36%;
+    --chart-4: 174 72% 66%;
+    --chart-5: 174 72% 76%;
+    --font-montserrat: "Montserrat", sans-serif;
+    --font-merriweather: "Merriweather", serif;
+  }
+
+  .dark {
+    --background: 220 13% 18%;
+    --foreground: 220 9% 95%;
+    --card: 220 13% 18%;
+    --card-foreground: 220 9% 95%;
+    --popover: 220 13% 18%;
+    --popover-foreground: 220 9% 95%;
+    --primary: 174 72% 56%;
+    --primary-foreground: 220 13% 18%;
+    --secondary: 220 13% 25%;
+    --secondary-foreground: 220 9% 95%;
+    --muted: 220 13% 25%;
+    --muted-foreground: 220 9% 70%;
+    --accent: 174 72% 56%;
+    --accent-foreground: 220 13% 18%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 220 9% 95%;
+    --border: 220 13% 25%;
+    --input: 220 13% 25%;
+    --ring: 174 72% 56%;
+    --chart-1: 174 72% 56%;
+    --chart-2: 174 72% 46%;
+    --chart-3: 174 72% 36%;
+    --chart-4: 174 72% 66%;
+    --chart-5: 174 72% 76%;
+    --font-montserrat: "Montserrat", sans-serif;
+    --font-merriweather: "Merriweather", serif;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-merriweather), Georgia, serif;
+    background: linear-gradient(135deg, hsl(220, 13%, 18%) 0%, hsl(220, 13%, 15%) 100%);
+    min-height: 100vh;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-montserrat), -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    @apply font-bold;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply backdrop-blur-md bg-white/5 border border-white/10 shadow-2xl;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .glass-nav {
+    @apply backdrop-blur-md bg-slate-900/80 border-b border-white/10;
+    background: rgba(30, 41, 59, 0.8);
+    backdrop-filter: blur(20px);
+  }
+
+  .glass-button {
+    @apply backdrop-blur-md bg-teal-500/20 border border-teal-400/30 hover:bg-teal-500/30 transition-all duration-300;
+    backdrop-filter: blur(10px);
+  }
+
+  .glass-input {
+    @apply backdrop-blur-md bg-white/5 border border-white/20 focus:border-teal-400/50 text-white placeholder:text-gray-400;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-teal-400 to-teal-300 bg-clip-text text-transparent;
+  }
+
+  .section-dark {
+    background: linear-gradient(135deg, hsl(220, 13%, 16%) 0%, hsl(220, 13%, 20%) 100%);
+  }
+
+  .section-darker {
+    background: linear-gradient(135deg, hsl(220, 13%, 12%) 0%, hsl(220, 13%, 18%) 100%);
+  }
+
+  .font-sans {
+    font-family: var(--font-montserrat), -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+
+  .font-serif {
+    font-family: var(--font-merriweather), Georgia, serif;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(220, 13%, 18%);
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(174, 72%, 56%);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(174, 72%, 46%);
+}
